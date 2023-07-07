@@ -86,8 +86,8 @@ class App extends Component {
         <div>Enter your address to get started: <input type="text" name="buyer_address" value={this.state.buyer_address} onChange={this.handleBuyerAccountInput}></input>
           <br/><br/>            
             {this.availableNfts.map((url, i) => (
-              <button type="button" key={i} name={i} onClick={this.handleNftSelectionSubmit}>
-                <img src = {url} name={i} height="100" width="100"></img>
+              <button type="button" key={i} name={i+1} onClick={this.handleNftSelectionSubmit}>
+                <img src = {url} name={i+1} height="100" width="100"></img>
               </button>
             ))}
         </div>

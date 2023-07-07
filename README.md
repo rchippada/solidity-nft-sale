@@ -35,6 +35,11 @@
 
 * Running the migrate command results in building the smart contract json in the `client/contracts` folder, which can be used to connect the client with the smart contracts
 
+* To verify the smart contract, use `truffle-plugin-verify`
+    * Sign into etherscan and get your api key and add it to your .env
+    * Execute `truffle run verify SpacebearSale --network <network>` (truffle migrate to the network before verifying)
+    * Click on the URL outputted to see in etherscan
+
 ## The React client app
 
 * The included client app is very minimal in nature.
